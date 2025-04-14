@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickGist - Resumir Textos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>QuickGist</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><button id="toggle-theme">Modo Oscuro</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Resumir textos en segundos</h2>
+        <p>Usa nuestra herramienta para obtener un resumen claro y preciso de cualquier texto.</p>
+        <textarea id="input-text" placeholder="Pega tu texto largo aquí para resumirlo..."></textarea>
+        <button id="generate-btn">Generar Resumen</button>
+    </section>
+
+    <!-- Resultados -->
+    <section id="result" class="result">
+        <h3>Resumen</h3>
+        <div id="summary-output"></div>
+        <div id="word-count">
+            <p>Palabras: <span id="original-count">0</span> -> <span id="summary-count">0</span></p>
+        </div>
+        <button id="copy-btn">Copiar resumen</button>
+    </section>
+
+    <!-- Sobre QuickGist -->
+    <section id="sobre">
+        <h2>Sobre QuickGist</h2>
+        <p>Una herramienta rápida, privada y fácil de usar para resumir textos de manera instantánea.</p>
+        <div class="features">
+            <div>
+                <h4>Rápido</h4>
+                <p>Obtén resúmenes en segundos.</p>
+            </div>
+            <div>
+                <h4>Privacidad</h4>
+                <p>Tus textos nunca serán guardados.</p>
+            </div>
+            <div>
+                <h4>Fácil</h4>
+                <p>Solo pega y haz clic.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <p>Contacto: eliasmansilla455@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
